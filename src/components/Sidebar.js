@@ -5,6 +5,8 @@ import {
   Route,
 } from 'react-router-dom'
 import slug from 'slug'
+import Loading from './Loading'
+
 
 function CustomLink({ to, children }) {
   return (
@@ -40,7 +42,7 @@ function Sidebar({ title, list, loading, location, match }) {
         ))}
       </ul>
     </div>
-    : <h3>LOADING</h3>
+    : <Loading/>
 }
 
 export default Sidebar
