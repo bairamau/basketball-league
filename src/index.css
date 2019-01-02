@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
   font-size: 16px;
 }
 
@@ -110,7 +110,6 @@ a {
 
 .sidebar-list {
   display: flex;
-  padding: 10px;
   flex-direction: column;
   padding: 0;
 }
@@ -218,6 +217,7 @@ a {
   .info-list div {
     font-size: 16px;
   }
+
   .championships li {
     font-size: 12px;
   }
@@ -230,4 +230,19 @@ a {
     padding: 5px;
     margin: 5px;
   }
-} 
+
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  display: none;
+}
